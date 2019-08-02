@@ -1,0 +1,28 @@
+<html>
+<head>
+    <link rel = "stylesheet" href = "">
+<body>
+
+</body>
+<script>
+var tableString = "<table border=1>",
+    body = document.getElementsByTagName('body')[0],
+    div = document.createElement('div');
+
+for (var row = 1; row < 8; row += 1) {
+
+    tableString += "<tr>";
+
+    for (var col = 1; col < 8; col += 1) {
+
+        tableString += "<td>" + "row [" + row + "]" + "col [" + col + "]" + "</td>";
+    }
+    tableString += "</tr>";
+}
+
+tableString += "</table>";
+div.innerHTML = tableString;
+body.appendChild(div);
+</script>
+</head>
+</html>
